@@ -1,0 +1,798 @@
+/* Estilos gerais */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  position: absolute;
+  top: 70px;
+  width: 100%;
+}
+
+h1,
+h2 {
+  color: #333;
+  font-size: 30px;
+}
+
+.navbar {
+  top: 0;
+  left: 0;
+  margin: 0;
+  display: block;
+  position: fixed;
+  width: 100%;
+  height: 70px;
+  z-index: 9999;
+  padding: 10px;
+  background-color: rgb(255, 255, 255);
+}
+
+
+ul.navbar-nav {
+  margin-left: 20%;
+}
+
+.nav-item {
+  display: inline-block;
+  margin-right: 25px;
+  /* opcional: adiciona um espaçamento entre os itens */
+  text
+}
+
+nav li img {
+  width: 32px;
+}
+
+
+nav a {
+  color: black;
+  text-decoration: none;
+  margin-right: 20px;
+  transition: color 0.3s ease;
+  font-family: 'Rubik', sans-serif;
+  font-size: 130%;
+}
+
+nav a:hover {
+  color: #e93d50;
+}
+
+#mainlogo {
+  width: 160px;
+  position: absolute;
+  left: 6%;
+  top: 0;
+}
+
+.login {
+  display: inline-block;
+  width: 200px;
+  position: absolute;
+  top: 18px;
+  right: 60px;
+}
+
+.login img {
+  position: absolute;
+  top: 14px;
+  left: 30px;
+  display: inline-block;
+  width: 30px;
+}
+
+.login h3 {
+  position: absolute;
+  display: inline-block;
+  right: 20px;
+  color: #ca1616;
+  font-family: 'Times New Roman', Times, serif;
+}
+
+#cabecalho {
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0)), url('fundo.png');
+  background-size: cover;
+  background-position: center;
+  width: 100%;
+  height: 700px;
+  display: block;
+  justify-content: center;
+  text-align: center;
+  position: relative;
+
+
+
+}
+
+#caixatexto {
+  width: 100%;
+  position: absolute;
+  bottom: 30%;
+}
+
+#caixatexto h1 {
+  font-family: 'Comforter', cursive;
+  font-size: 60px;
+  color: #e7e3e3;
+}
+
+#caixatexto h2 {
+  font-family: 'Roboto', sans-serif;
+  font-size: 25px;
+  color: #e7e3e3;
+}
+
+#servicos {
+  width: 100%;
+  position: absolute;
+  text-align: center;;
+  padding: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
+#servicos ul {
+  
+  padding: 0;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 40px;
+}
+
+.botao-modal {
+  border: none;
+  padding: 15px;
+  text-align: center;
+  display: inline-block;
+  font-size: 20px;
+  margin: 20px 2px;
+  cursor: pointer;
+  border: 1px #000000;
+  border-style:groove;
+  border-width: 2px;
+  border-radius: 19px;
+  background-color: #9b9b9b;
+  width: 20vw;
+  color: #000000;
+  font-family: 'Roboto', sans-serif;
+  transition: background-color 0.3s ease;
+}
+
+.botao-modal:hover {
+  background-color: #e93d50;
+}
+
+
+.subtitulos {
+  text-align: center;
+}
+
+.formulario_titulo {
+  display: inline-block;
+  margin-right;
+  vertical-align: auto;
+}
+
+
+
+
+#cotacao {
+  background-image: url("deffundobody.jpg");
+  padding: 20px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  width: 100%;
+  text-align: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+
+}
+
+
+
+form {
+  margin: 20px 50px;
+  padding: 20px;
+  text-align: left;
+  bottom: 20px;
+}
+
+form h2 {
+
+  margin-bottom: 30px;
+}
+
+
+label,
+input {
+  display: block;
+  width: 25vw;
+  height: 25px;
+  margin-bottom: 10px;
+}
+
+textarea {
+  width: 300px;
+  height: 150px;
+  margin-bottom: 10px;
+  padding: 10px;
+  resize: none;
+}
+
+button[type="submit"] {
+  padding: 10px 20px;
+  background-color: #e93d50;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button[type="submit"]:hover {
+  background-color: #af303f;
+}
+
+.localizacao {
+  margin: 70px 10px 10px 10px;
+  padding: 20px;
+}
+
+
+
+#mapa {
+  position: absolute;
+  top: 150px;
+  right: 100px;
+  width: 400px;
+  height: 400px;
+  display: absolute;
+ 
+  
+}
+
+/* Estilos do rodapé */
+footer {
+  background-color: #333;
+  color: #fff;
+  padding: 20px;
+  text-align: center;
+  width: 100%;
+}
+
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.modal-content {
+  background-color: rgba(0, 0, 0, 0.8);
+  margin: 10% auto;
+  padding: 20px;
+  border: 0;
+  width: 80%;
+  height: 65%;
+  position: relative;
+
+}
+
+#galeria {
+  position: absolute;
+
+}
+
+#foto {
+  border-radius: 1%;
+}
+
+#fechar {
+  border: none;
+  color: white;
+  padding: 10px;
+  text-align: center;
+
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+  border-radius: 4px;
+  background-color: #e93d50;
+  border-radius: 10px;
+  width: 7vw;
+  color: #fff;
+  font-family: Arial, sans-serif;
+  transition: background-color 0.3s ease;
+  bottom: 10px;
+}
+
+#nextphoto {
+  border: none;
+  color: white;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+  border-radius: 4px;
+  background-color: #e93d50;
+  border-radius: 10px;
+  width: 7vw;
+  color: #fff;
+  font-family: Arial, sans-serif;
+  transition: background-color 0.3s ease;
+  bottom: 35px;
+  position: absolute;
+  height: 20px;
+
+}
+
+#foto {
+  margin-top: 10px;
+  width: 650px;
+  height: 500px;
+  object-fit: cover;
+}
+
+
+.fechar-modal {
+  color: #aaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+}
+
+.social-media {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 10px;
+}
+
+.blocoRedes{
+  position: absolute;
+  top: 150px;
+ 
+}
+
+.redelogo{
+  width: 200px;
+}
+
+#face{
+  width: 100px;
+}
+/* Estilos gerais */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  position: absolute;
+  top: 70px;
+  width: 100%;
+}
+
+h1,
+h2 {
+  color: #333;
+  font-size: 30px;
+}
+
+.navbar {
+  top: 0;
+  left: 0;
+  margin: 0;
+  display: block;
+  position: fixed;
+  width: 100%;
+  height: 70px;
+  z-index: 9999;
+  padding: 10px;
+  background-color: rgb(255, 255, 255);
+}
+
+
+ul.navbar-nav {
+  margin-left: 20%;
+}
+
+.nav-item {
+  display: inline-block;
+  margin-right: 25px;
+  /* opcional: adiciona um espaçamento entre os itens */
+  text
+}
+
+nav li img {
+  width: 32px;
+}
+
+
+nav a {
+  color: black;
+  text-decoration: none;
+  margin-right: 20px;
+  transition: color 0.3s ease;
+  font-family: 'Rubik', sans-serif;
+  font-size: 130%;
+}
+
+nav a:hover {
+  color: #e93d50;
+}
+
+#mainlogo {
+  width: 160px;
+  position: absolute;
+  left: 6%;
+  top: 0;
+}
+
+.login {
+  display: inline-block;
+  width: 200px;
+  position: absolute;
+  top: 18px;
+  right: 60px;
+}
+
+.login img {
+  position: absolute;
+  top: 14px;
+  left: 30px;
+  display: inline-block;
+  width: 30px;
+}
+
+.login h3 {
+  position: absolute;
+  display: inline-block;
+  right: 20px;
+  color: #ca1616;
+  font-family: 'Times New Roman', Times, serif;
+}
+
+#cabecalho {
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0)), url('fundo.png');
+  background-size: cover;
+  background-position: center;
+  width: 100%;
+  height: 700px;
+  display: block;
+  justify-content: center;
+  text-align: center;
+  position: relative;
+
+
+
+}
+
+#caixatexto {
+  width: 100%;
+  position: absolute;
+  bottom: 30%;
+}
+
+#caixatexto h1 {
+  font-family: 'Comforter', cursive;
+  font-size: 60px;
+  color: #e7e3e3;
+}
+
+#caixatexto h2 {
+  font-family: 'Roboto', sans-serif;
+  font-size: 25px;
+  color: #e7e3e3;
+}
+
+#servicos {
+  width: 100%;
+  position: absolute;
+  text-align: center;;
+  padding: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
+#servicos ul {
+  
+  padding: 0;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 40px;
+}
+
+.botao-modal {
+  border: none;
+  padding: 15px;
+  text-align: center;
+  display: inline-block;
+  font-size: 20px;
+  margin: 20px 2px;
+  cursor: pointer;
+  border: 1px #f5eeee;
+  border-style:groove;
+  border-width: 1px;
+  border-radius: 19px;
+  background-color: #b1b1b1;
+  width: 12vw;
+  color: #000000;
+  font-family: 'Roboto', sans-serif;
+  transition: background-color 0.3s ease;
+}
+
+.botao-modal:hover {
+  background-color: #969292;
+}
+
+
+.subtitulos {
+  text-align: center;
+}
+
+.formulario_titulo {
+  display: inline-block;
+  margin-right;
+  vertical-align: auto;
+}
+
+
+
+
+#cotacao {
+  background-image: url("deffundobody.jpg");
+  padding: 20px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  width: 100%;
+  text-align: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+
+}
+
+
+
+form {
+  margin: 20px 50px;
+  padding: 20px;
+  text-align: left;
+  bottom: 20px;
+}
+
+form h2 {
+
+  margin-bottom: 30px;
+}
+
+
+label,
+input {
+  display: block;
+  width: 25vw;
+  height: 25px;
+  margin-bottom: 10px;
+}
+
+textarea {
+  width: 300px;
+  height: 150px;
+  margin-bottom: 10px;
+  padding: 10px;
+  resize: none;
+}
+
+button[type="submit"] {
+  padding: 10px 20px;
+  background-color: #e93d50;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button[type="submit"]:hover {
+  background-color: #af303f;
+}
+
+.localizacao {
+  margin: 70px 10px 10px 10px;
+  padding: 20px;
+}
+
+
+
+#mapa {
+width: 400px;
+display: inline-block;
+right: 10%;
+ right: 10px;
+  
+}
+
+/* Estilos do rodapé */
+footer {
+  background-color: #333;
+  color: #fff;
+  padding: 20px;
+  text-align: center;
+  width: 100%;
+}
+
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.modal-content {
+  background-color: rgba(0, 0, 0, 0.8);
+  margin: 10% auto;
+  padding: 20px;
+  border: 0;
+  width: 80%;
+  height: 65%;
+  position: relative;
+
+}
+
+#galeria {
+  position: absolute;
+
+}
+
+#foto {
+  border-radius: 1%;
+}
+
+#fechar {
+  border: none;
+  color: white;
+  padding: 10px;
+  text-align: center;
+
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+  border-radius: 4px;
+  background-color: #e93d50;
+  border-radius: 10px;
+  width: 7vw;
+  color: #fff;
+  font-family: Arial, sans-serif;
+  transition: background-color 0.3s ease;
+  bottom: 10px;
+}
+
+#nextphoto {
+  border: none;
+  color: white;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+  border-radius: 4px;
+  background-color: #e93d50;
+  border-radius: 10px;
+  width: 7vw;
+  color: #fff;
+  font-family: Arial, sans-serif;
+  transition: background-color 0.3s ease;
+  bottom: 35px;
+  position: absolute;
+  height: 20px;
+
+}
+
+#foto {
+  margin-top: 10px;
+  width: 650px;
+  height: 500px;
+  object-fit: cover;
+}
+
+
+.fechar-modal {
+  color: #aaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+}
+
+.social-media {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 10px;
+}
+
+.blocoRedes{
+  position: absolute;
+  top: 150px;
+ 
+}
+
+.redelogo{
+  width: 200px;
+}
+
+#face{
+  width: 100px;
+}
+
+#ondeEstamos{
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  height: 700px;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+
+
+#localizacao h1{
+  text-align: center;
+  font-family: 'Comforter', cursive;
+  font-size: 75px;
+  margin: 90px 30px;
+}
+
+.imagemgalpao {
+
+ 
+ 
+  flex: 0 0  50%;
+ 
+
+}
+
+
+#ondeEstamos{
+  margin-top: 90px;
+}
+
+#ondeEstamos p {
+  text-align:right;
+  position: absolute;
+  right: 30px;
+  display: inline-block;
+  margin-top: 20px;
+  margin-left: 600px;
+  font-family: 'Anton', sans-serif;
+  font-size: 28px;
+  color:rgb(36, 35, 35);
+  width: 60%;
+  line-height: 1.5;
+  letter-spacing: 0.1em;
+}
+
+.texto_sublinhado {
+  text-decoration: underline;
+  color:#ca1616;
+  font-style: italic;
+}

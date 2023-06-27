@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Casa do Óleo Jaraguá</title>
+  <link rel="stylesheet" type="text/css" href="reset.css">
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/css/bootstrap.min.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital@1&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Rubik&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Comforter&family=Rubik&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Anton&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+  <header>
+
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark" id="navbar">
+      <img src="logo.png" alt="Imagem" class="imagem" id="mainlogo">
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <img src="home.png" class="img">
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#servicos">HOME</a>
+          </li>
+          <li class="nav-item">
+            <img src="team.png" class="img">
+          </li>
+          <li class="nav-item">
+            <div class="logonav"></div>
+            <a class="nav-link" href="#servicos">EQUIPE</a>
+          </li>
+          </li>
+          <li class="nav-item">
+            <img src="coin.png" class="img">
+          </li>
+          <li class="nav-item">
+            <div class="logonav"></div>
+            <a class="nav-link" href="#cuidados">ORÇAMENTO</a>
+          </li>
+          </li>
+          </li>
+          <li class="nav-item">
+            <img src="telephone.png" class="img">
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#cuidados">CONTATO</a>
+          </li>
+          <section class="login">
+            <img src="login.png" alt="img-login">
+            <h3>
+              Minha conta
+            </h3>
+          </section>
+        </ul>
+
+
+      </div>
+    </nav>
+  </header>
+
+  <div id="cabecalho">
+    <section id="caixatexto">
+      <h1>Casa do Óleo<br>Jaraguá</h1>
+      <h2>O melhor serviço de troca de óleo automotivo há mais de 20 anos.</h2>
+
+      <section id="servicos">
+
+        <ul>
+          <li> <button class="botao-modal" onclick="abrirModal()">Troca de Óleo e Filtros</button>
+          </li>
+          <li><button class="botao-modal" onclick="abrirModal()">Revisão Preventiva</button></li>
+          <li><button class="botao-modal" onclick="abrirModal()">Câmbio Automático</button></li>
+        </ul>
+      </section>
+    </section>
+  </div>
+
+
+
+
+  
+
+  <div id="modal" class="modal">
+    <div class="modal-content">
+      <button class="fechar-modal" onclick="fecharModal()" id="fechar">&times;</button>
+
+      <div id="galeria">
+        <img id="foto" src="troca-oleo.png" alt="Imagem">
+      </div>
+
+      <button onclick="mudarFoto()" id="nextphoto">próxima</button>
+
+      <p>Texto informativo sobre a foto.</p>
+    </div>
+  </div>
+
+
+  <div id="localizacao">
+    <h1>Onde estamos</h1>
+   <div id="ondeEstamos"> 
+    <div class="imagemgalpao"></div>
+    <img src="fundo.webp" id="galpao">
+  </div>
+    <p>
+      Localizada na <span class="texto_sublinhado">Av. Jerimanduba 570,Jaraguá</span> nossa troca de óleo oferece um serviço rápido, confiável e conveniente.
+      Com profissionais especializados e produtos de qualidade, cuidamos do seu veículo enquanto você aproveita sua rotina. 
+      Visite-nos e experimente o melhor em manutenção automotiva. Troca de Óleo na Av. Jerimanduba 570 - confiança e eficiência em um só lugar.
+      <div class="localizacao">
+
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d14640.60035857486!2d-46.76584951284181!3d-23.45505!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94cefbf56d7df3f1%3A0x36d052f5a801369!2sCasa%20do%20%C3%93leo%20Jaragu%C3%A1!5e0!3m2!1spt-BR!2sbr!4v1686539813132!5m2!1spt-BR!2sbr"
+          width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade" id="mapa"></iframe>
+      </div>
+  </div>
+</div>
+
+
+
+
+  <footer>
+    <p>&copy; 2023 Casa do Óleo Jaraguá. Todos os direitos reservados. Feito por: Daniel </p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+
+</html>
