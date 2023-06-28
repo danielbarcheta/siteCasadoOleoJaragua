@@ -140,22 +140,12 @@ nav a:hover {
 }
 
 .botao-modal {
-  border: none;
-  padding: 15px;
-  text-align: center;
-  display: inline-block;
-  font-size: 20px;
-  margin: 20px 2px;
-  cursor: pointer;
-  border: 1px #000000;
-  border-style:groove;
-  border-width: 2px;
-  border-radius: 19px;
-  background-color: #9b9b9b;
-  width: 20vw;
-  color: #000000;
-  font-family: 'Roboto', sans-serif;
-  transition: background-color 0.3s ease;
+  
+
+ 
+  background: #ffffff;
+  box-shadow:  21px 21px 41px #e2dfdf,
+             -21px -21px 41px #000000;
 }
 
 .botao-modal:hover {
@@ -169,7 +159,7 @@ nav a:hover {
 
 .formulario_titulo {
   display: inline-block;
-  margin-right;
+ 
   vertical-align: auto;
 }
 
@@ -297,7 +287,6 @@ footer {
   color: white;
   padding: 10px;
   text-align: center;
-
   text-decoration: none;
   display: inline-block;
   font-size: 16px;
