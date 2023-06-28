@@ -92,13 +92,11 @@ nav a:hover {
   background-size: cover;
   background-position: center;
   width: 100%;
-  height: 700px;
+  height: 800px;
   display: block;
   justify-content: center;
   text-align: center;
   position: relative;
-
-
 
 }
 
@@ -223,23 +221,10 @@ button[type="submit"]:hover {
   background-color: #af303f;
 }
 
-.localizacao {
-  margin: 70px 10px 10px 10px;
-  padding: 20px;
-}
 
 
 
-#mapa {
-  position: absolute;
-  top: 150px;
-  right: 100px;
-  width: 400px;
-  height: 400px;
-  display: absolute;
- 
-  
-}
+
 
 /* Estilos do rodapé */
 footer {
@@ -401,9 +386,7 @@ ul.navbar-nav {
   text
 }
 
-nav li img {
-  width: 32px;
-}
+
 
 
 nav a {
@@ -450,20 +433,6 @@ nav a:hover {
   font-family: 'Times New Roman', Times, serif;
 }
 
-#cabecalho {
-  background: linear-gradient(to bottom, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0)), url('fundo.png');
-  background-size: cover;
-  background-position: center;
-  width: 100%;
-  height: 700px;
-  display: block;
-  justify-content: center;
-  text-align: center;
-  position: relative;
-
-
-
-}
 
 #caixatexto {
   width: 100%;
@@ -479,8 +448,8 @@ nav a:hover {
 
 #caixatexto h2 {
   font-family: 'Roboto', sans-serif;
-  font-size: 25px;
-  color: #e7e3e3;
+  font-size: 28px;
+  color: #eeeeee;
 }
 
 #servicos {
@@ -516,7 +485,8 @@ nav a:hover {
   border-radius: 19px;
   background-color: #b1b1b1;
   width: 12vw;
-  color: #000000;
+  color: #292828;
+  font-weight: bold;
   font-family: 'Roboto', sans-serif;
   transition: background-color 0.3s ease;
 }
@@ -532,7 +502,6 @@ nav a:hover {
 
 .formulario_titulo {
   display: inline-block;
-  margin-right;
   vertical-align: auto;
 }
 
@@ -596,10 +565,6 @@ button[type="submit"]:hover {
   background-color: #af303f;
 }
 
-.localizacao {
-  margin: 70px 10px 10px 10px;
-  padding: 20px;
-}
 
 
 
@@ -611,14 +576,7 @@ right: 10%;
   
 }
 
-/* Estilos do rodapé */
-footer {
-  background-color: #333;
-  color: #fff;
-  padding: 20px;
-  text-align: center;
-  width: 100%;
-}
+
 
 .modal {
   display: none;
@@ -733,49 +691,38 @@ footer {
   width: 100px;
 }
 
-#ondeEstamos{
-  display: flex;
-  flex-wrap: wrap;
-  width: 100%;
-  height: 700px;
-  background-repeat: no-repeat;
-  background-size: cover;
-}
 
-
-
-#localizacao h1{
+#QuemSomos h1{
   text-align: center;
   font-family: 'Comforter', cursive;
   font-size: 75px;
   margin: 90px 30px;
 }
 
-.imagemgalpao {
+#Img_e_Txt{
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  width: 100%;
+  height: 700px;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
 
- 
- 
-  flex: 0 0  50%;
- 
-
+#galpao{
+  width: 80%;
+  max-width: 100%;
 }
 
 
-#ondeEstamos{
-  margin-top: 90px;
-}
-
-#ondeEstamos p {
+#QuemSomos p {
   text-align:right;
-  position: absolute;
-  right: 30px;
   display: inline-block;
   margin-top: 20px;
-  margin-left: 600px;
   font-family: 'Anton', sans-serif;
   font-size: 28px;
   color:rgb(36, 35, 35);
-  width: 60%;
+  width: 100%;
+  margin-right: 5%;
   line-height: 1.5;
   letter-spacing: 0.1em;
 }
