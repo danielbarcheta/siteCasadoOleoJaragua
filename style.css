@@ -118,15 +118,7 @@ nav a:hover {
   color: #e7e3e3;
 }
 
-#servicos {
-  width: 100%;
-  position: absolute;
-  text-align: center;;
-  padding: 10px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
+
 
 
 #servicos ul {
@@ -142,7 +134,7 @@ nav a:hover {
 
  
   background: #ffffff;
-  box-shadow:  21px 21px 41px #e2dfdf,
+  box-shadow:  21px 21px 41px #5a5858,
              -21px -21px 41px #000000;
 }
 
@@ -233,6 +225,7 @@ footer {
   padding: 20px;
   text-align: center;
   width: 100%;
+  bottom:0;
 }
 
 .modal {
@@ -454,7 +447,7 @@ nav a:hover {
 
 #servicos {
   width: 100%;
-  position: absolute;
+  
   text-align: center;;
   padding: 10px;
   display: flex;
@@ -700,6 +693,7 @@ right: 10%;
 }
 
 #Img_e_Txt{
+  margin-top: 100px;
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   width: 100%;
@@ -714,13 +708,28 @@ right: 10%;
 }
 
 
+#QuemSomos{
+  background-image: url('deffundobody.jpg');
+
+  background-color: rgba(0, 0, 0, 0.5);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+
+
 #QuemSomos p {
-  text-align:right;
+  padding: 20px;
+  background-color: rgb(207, 15, 15);
+  text-shadow: 2px 2px 4px #000;
+  transform-style: preserve-3d;
+  transform: rotateX(10deg) rotateY(-10deg);
+  text-align:center;
   display: inline-block;
-  margin-top: 20px;
+  margin-top: 100px;
   font-family: 'Anton', sans-serif;
-  font-size: 28px;
-  color:rgb(36, 35, 35);
+  font-size: 20px;
+  color:rgb(255, 255, 255);
   width: 100%;
   margin-right: 5%;
   line-height: 1.5;
@@ -731,4 +740,97 @@ right: 10%;
   text-decoration: underline;
   color:#ca1616;
   font-style: italic;
+}
+
+.texto_mapa{
+  right: 300px;
+}
+
+.wrapper {
+  width: 100%;
+  margin: 40px auto;
+}
+
+div.gallery {
+  margin-top: 30px;
+}
+
+div.gallery ul {
+  list-style-type: none;
+  margin-left: 35px;
+}
+
+
+div.gallery ul li, div.gallery li img {
+  -webkit-transition: all 0.1s ease-in-out;
+    -moz-transition: all 0.1s ease-in-out;
+    -o-transition: all 0.1s ease-in-out;
+    transition: all 0.1s ease-in-out;
+}
+
+div.gallery ul li {
+  position: relative;
+  float: left;
+  width: 150px;
+  height: 150px;
+  margin: 10px;
+  padding: 2px;
+  z-index: 0;
+}
+
+
+div.gallery ul li:hover {
+  z-index: 5;
+}
+
+
+div.gallery ul li img {
+  position: absolute;
+  left: 0;
+  top: 0;
+  
+  padding: 5px;
+  width: 150px;
+  height: 150px;
+ 
+}
+
+div.gallery ul li img:hover {
+  width: 300px;
+  height: 280px;
+  margin-top: -130px;
+  margin-left: -130px;
+  top: 65%;
+  left: 65%;
+}
+
+p.attribution {
+  font-family: 'Consolas';
+  color: #000;
+  clear: both;
+  text-align: center;
+  line-height: 25px;
+  padding-top: 30px;
+}
+
+p.attribution a {
+  color: #4c8d7c;
+}
+
+
+@media only screen and (min-width: 499px) and (max-width: 1600px) {
+  .wrapper {
+    width: 500px;
+  }
+}
+
+@media only screen and (max-width: 498px) {
+  .wrapper {
+    width: 400px;
+  }
+
+  div.gallery ul {
+    list-style-type: none;
+    margin: 0;
+  }
 }
